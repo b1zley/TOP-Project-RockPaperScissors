@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection) {
     youLoseMessage = "You lose! " + computerSelection + " beats " + capitalizedPlayerSelection;
     youDrawMessage = "You chose: " + capitalizedPlayerSelection + "! Computer chose: " +
         computerSelection + "! Draw!";
-
+    
     if (capitalizedPlayerSelection == "Rock") {
         switch (computerSelection) {
             case "Rock":
@@ -62,15 +62,17 @@ function playRound(playerSelection, computerSelection) {
                 return youDrawMessage;
         }
     }
+    
+
 
 }
 
 function getUserInput(){
-    return prompt("Choose your fighter!");
+    return prompt("Rock Paper Scissors SHOOT!");
 }
 
 function game(){
     for(i=0 ; i < 5 ; i++){
-        playRound()
+        console.log(playRound(getUserInput(),getComputerChoice()))
     }
 }
