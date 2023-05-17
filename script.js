@@ -73,6 +73,6 @@ function getUserInput(){
 
 function game(){
     for(i=0 ; i < 5 ; i++){
-        console.log(playRound(getUserInput(),getComputerChoice()))
+        console.log(playRound(getUserInput(),getComputerChoice()));
     }
 }
